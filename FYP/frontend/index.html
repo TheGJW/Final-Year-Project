@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Locator</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="phone">
+      <!-- HOME SCREEN -->
+      <div id="home" class="screen active">
+        <h3>Object Locator</h3>
+
+        <div class="bottom-buttons">
+          <button onclick="goToUpload()"> Upload Images</button>
+          <button onclick="showScreen('mic')"> Microphone </button>
+        </div>
+      </div>
+
+      <!-- UPLOAD SCREEN -->
+      <div id="upload" class="screen">
+        <h3>Upload Images</h3>
+
+        <p>Top Down Image</p>
+        <input type="file" id="topImage" />
+
+        <p>Wide Angle Image</p>
+        <input type="file" id="wideImage" />
+        
+        <button type="button" onclick="submitImages(event)">Submit</button>
+      </div>
+
+      <!-- LOADING -->
+      <div id="loading" class="screen">
+        <h3>Processing...</h3>
+      </div>
+
+      <!-- SELECTION SCREEN -->
+      <div id="select" class="screen">
+        <p>Click a box to select the object.</p>
+        <p>If not detected in wide view, click the button and drag to select.</p>
+        <h4>Top View</h4>
+        <div class="image-container">
+          <img id="topImg" />
+          <canvas id="topCanvas"></canvas>
+        </div>
+
+        <h4>Wide View</h4>
+        <div class="image-container">
+          <img id="wideImg" />
+          <canvas id="wideCanvas"></canvas>
+        </div>
+        <button onclick="enableManualMode('wide')">
+            Object not in box
+        </button>
+        <input id="objectName" placeholder="Enter object name" />
+
+        <button onclick="processSelection()">Confirm Selection</button>
+
+      </div>
+
+      <!-- MICROPHONE SCREEN -->
+      <div id="mic" class="screen">
+        <h3>Voice Search</h3>
+
+        <button id="micBtn" onclick="toggleMic()"> Start</button>
+
+        <p id="micStatus">Idle</p>
+
+        <button onclick="showScreen('home')">Back</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
