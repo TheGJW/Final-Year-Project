@@ -1,0 +1,21 @@
+# Audio output files
+*.mp3
+
+# Model Weights & Archives
+*.pt
+*.pth
+*.tar
+*.tar.gz
+
+# Output Directories
+runs/
+
+# Datasets & Folders
+*.coco/
+archive/
+photos/
+cropped_photos/
+
+# Speech-to-Text folders & models
+audio_queries/
+models/
