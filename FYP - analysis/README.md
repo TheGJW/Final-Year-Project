@@ -1,11 +1,6 @@
-removed alexnet_places365.pth.tar, resnet18_places365.pth.tar, resnet50_places365.pth.tar from the scene classification model due to size
+# AI/ML Model Analysis and Benchmarking
 
-removed yolov8n.pt and yolov8s.pt from object detection folder
+This repository contains multi-modal AI analysis scripts and experiments for the object locator application (including object detection, scene classification, image embedding, text-to-speech, speech-to-text, and semantic retrieval pipelines).
 
-removed household.v1i.coco dataset from object detection folder 
-
-removed yolov8n.pt from image embedding folder
-
-removed val_256\test_samples from scene classification
-
-removed coqui and vosk models from speech to text folder
+## Note on Model Weights and Datasets
+Due to GitHub file size constraints, pre-trained model weights (`.pt`, `.pth.tar`, Coqui, Vosk models) and large raw datasets have been excluded from this repository.
