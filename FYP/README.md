@@ -3,8 +3,10 @@
 This repository contains the full-stack application (frontend and backend) for the Multimodal Object Locator System.
 
 ## Tech Stack & Architecture
-- **Backend:** FastAPI, Python, Supabase
-- **Frontend:** HTML/CSS/JavaScript (served via local HTTP server)
+
+* **Backend & API Layer:** Python, FastAPI, Supabase
+* **AI & Multimodal Services:** Modular pipeline handling object detection, vision/text embedding, vector-based semantic retrieval, color analysis, and spatial reasoning.
+* **Frontend:** HTML, CSS, JavaScript served via lightweight local server.
 
 ## Running the Application
 
