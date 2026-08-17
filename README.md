@@ -1,3 +1,4 @@
-All the models and system level components will be evaluated using jupyter notebook.
-The main app will be under FYP folder
-And all the detailed evalauations of the model will be under the FYP-analysis folder
+## Repository Structure
+
+* **`FYP/`**: Contains the main application code (FastAPI backend and frontend interface).
+* **`FYP-analysis/`**: Contains Jupyter Notebooks for detailed model training, testing, and system-level evaluations.
