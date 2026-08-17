@@ -11,5 +11,5 @@ backend/*.jpeg
 backend/*.png
 
 # Model weights (ignoring heavy binaries, keeping text config files)
-backend/weights/*.pth
+backend/weights/*.tar
 backend/*.pt
